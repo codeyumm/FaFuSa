@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FaFuSa</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+</head>
+<body>
+
+
+
+
+	<div class = "result_holder effect1">
+		<p id="result">Start</p>
+
+		<button onclick="getChar()" id = "button_test" class = "button glow" >Generate</button>
+<!-- 
+		<button onClick= "setTimeout(test,5000)" id= "test_btn">Ok yaar</button> -->
+
+	</div>
+
+	<script type="text/javascript">
+
+		function getChar(){
+
+
+			var char_list = "કખગઘચછજઝટઠડઢણતથદધનપફબભમયરલવશષસહળઅઈઊ";
+
+
+			var random_char_number = Math.floor(Math.random() * char_list.length)
+
+			var random_char = char_list.charAt(random_char_number);
+
+			document.getElementById("result").innerHTML = random_char;
+
+		};
+
+		function test(){
+			alert("haa vau kiski ?");
+		};
+
+
+	</script>
+</body>
+</html>
